@@ -27,13 +27,70 @@
 		<h2>Entre em contato</h2>
 
 		<form>
+			<div>
+				<label>Nome Completo:</label>
+				<input type="texto" name="nome" id="nome" size="50" maxlength="40" placeholder="Nome Completo" required autocomplete="off" autofocus	>
+			</div>
 
-			<label>Nome Completo:</label>
-			<input type="texto" name="nome" id="nome" size="50" maxlength="40">
-			<label for="email">E-mail:</label>
-			<input type="email" name="endereçoEmail" id="email">
+			<div>
+				<label for="email">E-mail:</label>
+				<input type="email" name="endereçoEmail" id="email" size="50" maxlength="40" placeholder="nome@dominio.com" >
+			</div>
+
+			<div>
+				<label for="telefone">Telefone:</label>
+				<input type="tel" name="telefone" id="telefone" placeholder="(xx) xxxxx-xxxx" pattern="\([0-9]{2}\)[0-9]{5}-[0-9]{4}">
+			</div>
+
+
+			<fieldset>
+				<legend>Perfil:</legend>
+				<label><input type="radio" name="perfil" value="E" checked>Estudante</label><br>
+				<label><input type="radio" name="perfil" value="P">Profissional de TI</label><br>
+				<label><input type="radio" name="perfil" value="O">Outros</label>
+			</fieldset>	
+			<br>
+			<div>
+				<label for="Assunto">Assunto:</label>
+				<select name="assunto" id="assunto">
+					<option value="0">Selecione</option>
+					<option value="1">Dúvidas</option>
+					<option value="2">Sugestões</option>
+					<option value="3">Críticas</option>
+					<option value="4">Elogios</option>
+				</select>
+			</div>
+			<br>
+			<fieldset>
+				<legend>Horário preferencial para contato:</legend>
+				<label><input type="checkbox" name="manha" checked>Manhã</label>
+				<label><input type="checkbox" name="tarde" >Tarde</label>
+				<label><input type="checkbox" name="noite" >Noite</label>
+			</fieldset>
+
+			<div>
+				<label for="msg">Mensagem:</label>
+				<textarea name="mensagem" id="msg"></textarea>
+			</div>
+			<div>
+				<input type="submit" name="enviar" value="Enviar">
+
+				<input type="reset" name="limpar" value="Limpar campos">
+			</div>
+
+			<h2>Nossa localização</h2>
+			<details>
+				<summary> Ver endereço completo</summary>
+				<p>Rua XYZ, nº 1000, chapecó</p>
+				<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d14204.184173399157!2d-52.71349349999999!3d-27.1233597!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94fb4b2c596e3421%3A0x5536ed2fec03c929!2sRestaurante+Universit%C3%A1rio!5e0!3m2!1spt-BR!2sbr!4v1566247819730!5m2!1spt-BR!2sbr" width="600" height="450" frameborder="0" style="border:0" allowfullscreen></iframe>">
+
+			</details>
+			
 		</form>
+
+		
 	</main>
+
 	
 	<footer>	
 		<p>Todos os direitos reservados &copy; &lt;teste&gt;</p>
