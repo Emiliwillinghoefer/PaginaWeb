@@ -1,0 +1,124 @@
+/* formataçoes gerais*/
+
+body{
+	font-family: arial, sans-serif, monospace;
+	margin: 0;
+	font-size: 1.2em; /*EM = tamanho de letra atual*/
+}
+header, footer{
+	background-color: palevioletred ;/*achar cor no COLOR W3C */
+}
+nav{
+	background-color: pink ;
+}
+
+header, footer, nav, main{
+	padding: 10px;
+}
+
+h1, footer{
+	color: #000000; /*cor em hexadecimal: RGB: #000000 PRETRO ---- #FFFFFF BRANCO ---- #FF0000 VERMELHO ---- #00FF00 VERDE ---- #0000FF AZUL-------OLHAR SITE PALETTON*/
+}
+
+h2{
+	color:#AC653B;
+}
+
+header p {
+	color:mintcream;
+}
+
+main{
+	background-color: mintcream; 
+}
+
+
+
+
+
+/*tabela*/
+th, table, td{
+	border: 1px solid black;
+	border-collapse: collapse; /*cola a borda dupla em uma só*/
+}
+th{
+	background-color: #AC653B;
+	color:white;
+}
+tr:nth-child(even){
+	background-color: #FFEEAF;
+}
+tr:nth-child(odd){
+	background-color: #CCC; 
+}
+
+
+
+
+/*LINKS*/
+
+a {
+	text-decoration: none;
+}
+a:link{
+	color: #574400;
+}
+a:visited{
+	color: #00FF00;
+}
+a:active{
+	color:red;
+}
+a:hover{
+	color: #143055;
+	text-shadow: 3px 3px 5px white; /*sombra horiz., vert.,  distancia e cor*/
+}
+
+
+/*-----MENU----*/
+
+nav ul li{
+	display: inline;
+	margin-right: 25px;
+}
+
+/*PORTFOLIO*/
+
+figure img{
+	width:400px;
+	height:200px;
+}
+figure{
+	float:left;
+}
+#gostou{
+	clear: left;
+}
+
+figure:hover{
+	box-shadow: 5px 5px 10px gray;
+	transform: scale(1.2) rotate(-2deg);
+	transition: 0.5s;
+}
+
+/*    FORMULÁRIO   */
+
+input, select, textarea{
+	border: 2px solid palevioletred;
+	border-radius: 6px;
+	padding: 5px 10px; /*5 no top e bottom; 10 no left e rigth*/
+	margin: 5px 0px;
+	background-color: -pink;
+	font-family: monospace;
+}	
+
+input: focus, select:focus, textarea:focus{
+	border:2px solid #572000;
+	background-color: #EEE
+	font-weight: bold;
+}
+.rotulo{
+	width: 150px;
+	display: inline-block;
+	text-align: right;
+}

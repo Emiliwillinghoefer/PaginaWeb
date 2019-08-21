@@ -4,13 +4,14 @@
 <head>
 	<title>Site Profissional</title>
 	<meta charset = "UTF-8">
+	<link rel="stylesheet" href="css/estilos.css">
 </head>
 
 <body>
 	<header>
 		<h1>Emili Willinghoefer</h1> <!--titulo maior -->
 		<p>Estudante de ciência da computação</p> <!--paragrafo -->
-		<hr> <!--linha horizontal -->
+		<!-- <hr> linha horizontal -->
 	</header>
 	
 	<nav>
@@ -28,17 +29,17 @@
 
 		<form>
 			<div>
-				<label>Nome Completo:</label>
-				<input type="texto" name="nome" id="nome" size="50" maxlength="40" placeholder="Nome Completo" required autocomplete="off" autofocus	>
+				<label for="nome" class="rotulo">Nome Completo:</label>
+				<input type="texto" name="nome" id="nome" size="50" maxlength="40" placeholder="Nome Completo" required autocomplete="off" autofocus>
 			</div>
 
 			<div>
-				<label for="email">E-mail:</label>
+				<label for="email" class="rotulo">E-mail:</label>
 				<input type="email" name="endereçoEmail" id="email" size="50" maxlength="40" placeholder="nome@dominio.com" >
 			</div>
 
 			<div>
-				<label for="telefone">Telefone:</label>
+				<label for="telefone"class="rotulo">Telefone:</label>
 				<input type="tel" name="telefone" id="telefone" placeholder="(xx) xxxxx-xxxx" pattern="\([0-9]{2}\)[0-9]{5}-[0-9]{4}">
 			</div>
 
@@ -51,7 +52,7 @@
 			</fieldset>	
 			<br>
 			<div>
-				<label for="Assunto">Assunto:</label>
+				<label for="Assunto" class="rotulo">Assunto:</label>
 				<select name="assunto" id="assunto">
 					<option value="0">Selecione</option>
 					<option value="1">Dúvidas</option>
@@ -69,7 +70,7 @@
 			</fieldset>
 
 			<div>
-				<label for="msg">Mensagem:</label>
+				<label for="msg">Mensagem:</label><br>
 				<textarea name="mensagem" id="msg"></textarea>
 			</div>
 			<div>
