@@ -1,0 +1,54 @@
+.primeira{
+	background-color: Azure ; 
+	text-align: center;
+	margin:0 50px;	
+
+}
+div.primeira_tabela table.primeira #produto{
+	text-align: justify;
+	font-size: 17PX;
+}
+
+table{
+	width: 90%;
+}
+
+input[type=number]{
+	width:60px;
+}
+
+#linha2{
+	background-color: LightBlue ;
+	text-align: justify;
+	padding:50px;
+	font-size: 20px;
+}
+
+.segunda {
+	background-color: Azure ; 
+	text-align: left;
+	margin:0 50px;	
+
+}
+#linha5{
+	background-color: LightBlue ;
+	text-align: justify;
+	font-size: 20px;
+}
+
+
+.segunda tr td{
+	padding: 20px 0;
+}
+
+table.terceira{
+	font-size: 25px;
+	text-align: right;
+	margin: 30px 50px;
+	background-color:Azure;
+
+}
+
+
+
+

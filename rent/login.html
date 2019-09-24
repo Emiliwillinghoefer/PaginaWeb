@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta charset="utf-8">
+	<title>Rent a Tool</title>
+	<link rel="stylesheet" type="text/css" href="css/rent.css">
+	<link rel="stylesheet" type="text/css" href="css/forms.css">
+	<link href="https://fonts.googleapis.com/css?family=Lobster" rel="stylesheet"> <!-- web font Lobster -->
+</head>
+<body>
+	<!-- cabeçalho -->
+	<header>
+		<h1>Rent a Tool</h1>
+		<div id="menu-login">
+			<span id="login">Olá, visitante! (<a href="login.html">login</a>)</span>
+			<span id="carrinho"><a href="#">Meu carrinho <span id="numItensCarrinho">(2)</span><img src="img/cart.png" width="32" alt="carrinho de compras"></a></span>			
+		</div>
+        <p id="exibe-menu">Menu</p>		
+		<nav class="menu-opcoes">    
+			<ul>
+				<li><a href="login.html">Minha Conta</a></li>
+				<li><a href="#">Programa de pontos</a></li>
+				<li><a href="#">Consumo solidário</a></li>
+				<li><a href="#">Quem somos</a></li>
+				<li><a href="#">Ajuda</a></li>
+			</ul>
+		</nav>
+	</header>
+	<!-- fim cabeçalho -->
+
+	<!-- area central com 3 colunas -->
+	<div class="container">
+		<section class="col-1">
+			<section class="busca">
+				<form>
+					<input type="search" placeholder="Busca..." name="busca">
+					<button>OK</button>
+				</form>
+			</section>
+
+			<section class="menu-categorias">
+				<h2>Categorias</h2>
+				<nav>
+					<ul>
+						<li><a href="#">Marcenaria</a></li>
+						<li><a href="#">Jardinagem</a></li>
+						<li><a href="#">Limpeza</a></li>
+						<li><a href="#">Escritório</a></li>
+						<li><a href="#">Mecânica</a></li>
+					</ul>
+				</nav>
+			</section>
+		</section>	
+
+		<section class="col-2">
+			<h2>Minha conta</h2>
+			<div>
+				<form action="" method="post" id="form-contato">
+					<fieldset>
+						<legend><strong>Já possui cadastro?</strong></legend>
+					    <div class="form-item">
+					      <label for="usuario" class="rotulo">Login ou e-mail:</label>
+					      <input type="text" id="usuario" name="usuario" size="50">   
+					    </div>
+					    <div class="form-item">
+					      <label for="senha" class="rotulo">Senha:</label>
+					      <input type="password" id="senha" name="senha" size="50">   
+					    </div>					    				    			
+					    <div class="form-item">
+							<input type="submit" id="botao" value="Entrar">
+					    </div>
+					</fieldset>
+					<br>
+					<fieldset>
+						<legend>
+							<strong>Ainda não é nosso cliente?</strong>
+						</legend>
+						<p>
+							<a href="cad_cliente.html">
+							Cadastre-se</a> agora para utilizar nossos serviços
+						</p>
+					</fieldset>
+				</form>
+			</div>			
+		</section>
+
+		<aside class="col-3">
+			<h2>Mais pedidos</h2>
+			<!-- container de mais pedidos -->
+			<div class="lista-produtos">				
+				<!-- um produto -->
+				<div class="produto">
+					<a href="produto.html">
+						<figure>
+							<img src="img/produtos/lavadora.jpg" alt="miniatura1">
+							<figcaption>Lavadora de alta pressão<span class="preco">R$ 20,00</span></figcaption>
+						</figure>
+					</a>
+				</div> 
+				<!-- fim produto -->
+				<div class="produto">
+					<a href="produto.html">
+						<figure>
+							<img src="img/produtos/projetor.jpg" alt="miniatura1">
+							<figcaption>Projetor multimídia<span class="preco">R$ 20,00</span></figcaption>
+						</figure>
+					</a>
+				</div>
+				<div class="produto">
+					<a href="produto.html">
+						<figure>
+							<img src="img/produtos/serra3.jpg" alt="miniatura1">
+							<figcaption>Serra elétrica<span class="preco">R$ 20,00</span></figcaption>
+						</figure>
+					</a>
+				</div> 	
+			</div>
+		</aside>
+	</div>
+	<!-- fim area central -->
+
+	<!-- rodape -->
+	<footer><p>Rent a Tool - Chapecó/SC</p>
+		<ul class="social">
+			<li><a href="http://facebook.com/rentatool"><img src="img/facebook.png" alt="Facebook"></a></li>
+			<li><a href="http://twitter.com/rentatool"><img src="img/twitter.png" alt="Twitter"></a></li>
+		</ul>
+		<div id="ajuda">Precisa de ajuda? <span id="fechar">x</span></div>
+	</footer>
+	<!-- fim rodape -->
+    <script src="js/index.js"></script>
+	<script src="js/cad_cliente.js"></script>
+</body>
+</html>
