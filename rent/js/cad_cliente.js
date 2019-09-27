@@ -1,6 +1,6 @@
 
 document.getElementById("perfilP").onclick = function(){
-	document.getElementById("empresa").disabled = true;
+	document.getElementById("empresa").disabled = false;
 	document.getElementById("mensagem-empresa").innerHTML = "Entre em contato pra estabelecer uma parceria!";
 };
 
@@ -35,18 +35,7 @@ function validaCadastro(){
 	}
 
 	//campo CPF
-	var campo = document.getElementById("CPF");
-	var erro = document.getElementById("msg-CPF");
-	if (campo.value == ""){
-		mostraErro(erro, "Por favor digite seu CPF completo");
-	}else{
-		erro.style.display = "none";
-		for (var i = 0; i < campo.length; i++) {
-			if (i==3||i==6) {
-				
-			}
-		}
-	}
+
 	//campo email
 	var campo = document.getElementById("email");
 	var erro = document.getElementById("msg-email");
@@ -131,4 +120,26 @@ function validaCadastro(){
 	}	
 
 
+}
+
+document.getElementById("CPF").onchange=function(){
+	console.log("aa")
+	var campo = document.getElementById("CPF");
+	var erro = document.getElementById("msg-CPF");
+	var concatena = "";
+	if (campo.value == ""){
+		mostraErro(erro, "Por favor digite seu CPF completo");
+	}else{
+		erro.style.display = "none";
+		for (var i = 0; i < campo.length; i++) {
+			concatena+= campo[i];
+			if (i==2||i==5) {
+				concatena+=".";
+			}
+			if (i==8) {
+				concatena+="-";
+			}
+		}console.log(concatena);
+		document.getElementById("CPF").innerHTML=concatena;
+	}
 }
